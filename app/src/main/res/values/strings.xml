@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Quiz_App</string>
+    <string name="quizname">The name of the capital of Bangladesh?</string>
+    <string name="option1">Dhaka</string>
+    <string name="option2">Chitagong</string>
+    <string name="option3">Syhlet</string>
+    <string name="option4">Khulna</string>
 </resources>
