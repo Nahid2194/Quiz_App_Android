@@ -5,7 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:gravity="center"
     tools:context=".MainActivity">
+
 
     <TextView
         android:layout_width="match_parent"
@@ -16,33 +18,53 @@
         android:textStyle="bold"
       />
 
-    <RadioButton
+    <RadioGroup
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/option1"
-        android:textSize="35sp"
-        android:textStyle="bold"
-        android:layout_marginRight="10dp"/>
-    <RadioButton
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/option2"
-        android:textSize="35sp"
-        android:textStyle="bold"
-        android:layout_marginRight="10dp"/>
-    <RadioButton
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/option3"
-        android:textSize="35sp"
-        android:textStyle="bold"
-        android:layout_marginRight="10dp"/>
-    <RadioButton
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/option4"
-        android:textSize="35sp"
-        android:textStyle="bold"
-        android:layout_marginRight="10dp"/>
+        android:id="@+id/radioGroupId">
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButton1Id"
+            android:text="@string/option1"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:layout_marginRight="10dp"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/option2"
+            android:id="@+id/radioButton2Id"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:layout_marginRight="10dp"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/option3"
+            android:id="@+id/radioButton3Id"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:layout_marginRight="10dp"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/option4"
+            android:id="@+id/radioButton4Id"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:layout_marginRight="10dp"/>
 
+    </RadioGroup>
+
+    <Button
+        android:layout_marginTop="30dp"
+        android:id="@+id/submitButtonId"
+        android:onClick="submitFunction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="submit"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:layout_marginRight="10dp"/>
 </LinearLayout>
