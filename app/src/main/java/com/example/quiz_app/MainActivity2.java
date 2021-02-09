@@ -24,9 +24,10 @@ public class MainActivity2 extends AppCompatActivity {
         }
     }
 
-    public void outputFunction(View view) {
-    }
+
 
     public void tryFunction(View view) {
+        Intent myIntent = new Intent(MainActivity2.this,MainActivity.class);
+        startActivity(myIntent);
     }
 }
