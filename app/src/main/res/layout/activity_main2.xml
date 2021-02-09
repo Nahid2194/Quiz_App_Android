@@ -3,7 +3,31 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:orientation="vertical"
     android:layout_height="match_parent"
     tools:context=".MainActivity2">
 
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/outputTextViewId"
+        android:text=""
+        android:gravity="center"
+        android:onClick="outputFunction"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:layout_marginTop="30dp"
+        android:id="@+id/tryButtonId"
+        android:onClick="tryFunction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Try Again"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:layout_marginRight="10dp"/>
 </LinearLayout>
